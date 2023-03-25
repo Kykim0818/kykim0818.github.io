@@ -9,9 +9,10 @@
  */
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
-    author: `@gatsbyjs`,
+    title: `Kilog`,
+    description: `개발 일지 1.1`,
+    author: `kykim0818`,
+    siteUrl: 'https://kykim0818.github.io/',
   },
   plugins: [
     {
@@ -24,6 +25,7 @@ module.exports = {
     `gatsby-plugin-emotion`,
     `gatsby-plugin-react-helmet`,
     {
+      // 마크다운 파일이 위치할 디렉토리를 탐색할 수 있도록,
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `contents`,
@@ -32,6 +34,13 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve: 'gatsby-plugin-canonical-urls',
+      options: {
+        siteUrl: 'https://kykim0818.github.io/',
+        stripQueryString: true,
+      },
+    },
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
