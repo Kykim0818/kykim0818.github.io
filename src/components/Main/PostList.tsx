@@ -9,7 +9,7 @@ const POST_ITEM_DATA = {
   summary:
     'Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident repellat doloremque fugit quis rem temporibus! Maxime molestias, suntrem debitis odit harum impedit. Modi cupiditate harum dignissimos eos in corrupti!',
   thumbnail:
-    'https://avatars.githubusercontent.com/u/24629040?s=460&u=0bb3411f25c0e1c5d25d753fc648739367cb7032&v=4',
+    'https://marketplace.canva.com/EAFGehJ4TNI/1/0/1600w/canva-yellow-bright-business-idea-tutorial-youtube-thumbnail-PAg4rCuDqkE.jpg',
   link: 'https://www.google.co.kr/',
 }
 
