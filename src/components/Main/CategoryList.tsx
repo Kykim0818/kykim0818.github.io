@@ -17,6 +17,7 @@ export type CategoryListProps = {
 type CategoryItemProps = {
   active: boolean
 }
+
 type GatsbyLinkProps = {
   children: ReactNode
   className?: string
@@ -35,7 +36,7 @@ const CategoryList: FunctionComponent<CategoryListProps> = function ({
           active={name === selectedCategory}
           key={name}
         >
-          #{name}({count})
+          {/* # All 5 */}#{name}({count})
         </CategoryItem>
       ))}
     </CategoryListWrapper>
@@ -50,7 +51,6 @@ const CategoryListWrapper = styled.div`
   width: 768px;
   margin: 100px auto 0;
 `
-
 const CategoryItem = styled(({ active, ...props }: GatsbyLinkProps) => (
   <Link {...props} />
 ))`
