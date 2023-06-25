@@ -32,8 +32,26 @@ module.exports = {
         path: `${__dirname}/contents`,
       },
     },
+    {
+      // static 파일이 위치할 디렉토리를 탐색할 수 있도록,
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `${__dirname}/static`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-sharp',
+      options: {
+        defaults: {
+          formats: ['auto', 'webp'],
+          quality: 100,
+          placeholder: 'blurred',
+        },
+      },
+    },
     `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
+    'gatsby-plugin-image',
     {
       resolve: 'gatsby-transformer-remark',
       options: {
