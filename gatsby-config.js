@@ -10,7 +10,7 @@
 module.exports = {
   siteMetadata: {
     title: `Kilog`,
-    description: `개발 일지 1.1`,
+    description: `성장하고 공유하기 위한, 개발 일기`,
     author: `kykim0818`,
     siteUrl: 'https://kykim0818.github.io/',
   },
