@@ -42,6 +42,11 @@ const Template: FunctionComponent<TemplateProps> = function ({
         <meta name="twitter:creator" content="Kykim0818" />
 
         <html lang="ko" />
+
+        <meta
+          name="google-site-verification"
+          content="v9RrH29eHGSdzfQBnukif4jmqgXPZPh2L0-1dfX_j-0"
+        />
       </Helmet>
       <GlobalStyle />
       {children}
