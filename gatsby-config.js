@@ -94,6 +94,7 @@ module.exports = {
       resolve: 'gatsby-plugin-canonical-urls',
       options: {
         siteUrl: 'https://kykim0818.github.io/',
+        // 카테고리를 쿼리스트링으로 받기 때문에 중복페이지가 생성될 가능성이 있다. 쿼리스트링을 제거하도록 True
         stripQueryString: true,
       },
     },
