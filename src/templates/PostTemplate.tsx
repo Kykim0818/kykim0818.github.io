@@ -1,3 +1,4 @@
+import Template from 'components/Common/Template'
 import { graphql } from 'gatsby'
 import React, { FunctionComponent } from 'react'
 
@@ -6,7 +7,7 @@ type PostTemplateProps = {}
 const PostTemplate: FunctionComponent<PostTemplateProps> = function (props) {
   console.log(props)
 
-  return <div>Post Template</div>
+  return <Template>Post Template</Template>
 }
 
 export default PostTemplate
