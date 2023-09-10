@@ -12,12 +12,6 @@ type TemplateProps = {
   children: ReactNode
 }
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: column;
-  height: 100%;
-`
-
 const Template: FunctionComponent<TemplateProps> = function ({
   title,
   description,
@@ -46,6 +40,8 @@ const Template: FunctionComponent<TemplateProps> = function ({
         <meta name="twitter:image" content={image} />
         <meta name="twitter:site" content="Kykim0818" />
         <meta name="twitter:creator" content="Kykim0818" />
+
+        <html lang="ko" />
       </Helmet>
       <GlobalStyle />
       {children}
@@ -53,5 +49,11 @@ const Template: FunctionComponent<TemplateProps> = function ({
     </Container>
   )
 }
+
+const Container = styled.main`
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+`
 
 export default Template

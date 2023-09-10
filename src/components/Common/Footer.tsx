@@ -1,7 +1,16 @@
 import React, { FunctionComponent } from 'react'
 import styled from '@emotion/styled'
 
-const FooterWrapper = styled.div`
+const Footer: FunctionComponent = function () {
+  return (
+    <FooterWrapper>
+      Thank You for Visiting My Blog, Have a Good Day 😆
+      <br />© 2023 Developer kiyoung, Powered By Gatsby.
+    </FooterWrapper>
+  )
+}
+
+const FooterWrapper = styled.footer`
   display: grid;
   place-items: center;
   margin-top: auto;
@@ -14,14 +23,5 @@ const FooterWrapper = styled.div`
     font-size: 13px;
   }
 `
-
-const Footer: FunctionComponent = function () {
-  return (
-    <FooterWrapper>
-      Thank You for Visiting My Blog, Have a Good Day 😆
-      <br />© 2023 Developer kiyoung, Powered By Gatsby.
-    </FooterWrapper>
-  )
-}
 
 export default Footer
