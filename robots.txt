@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://kykim0818.github.io/sitemap-index.xml
+Host: https://kykim0818.github.io
