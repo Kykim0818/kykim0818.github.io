@@ -31,6 +31,11 @@ const PostHeadWrapper = styled.div`
   position: relative;
   width: 100%;
   height: 400px;
+
+  // mobile
+  @media (max-width: 768px) {
+    height: 300px;
+  }
 `
 
 // gatsby-plugin-image에 자제적인 style 때문에 이렇게 작성, 이렇게 하지 않으면 !important로 해야 스타일이 먹음
@@ -42,6 +47,11 @@ const BackgroundImage = styled((props: GatsbyImgProps) => (
   height: 400px;
   object-fit: cover;
   filter: brightness(0.25);
+
+  // mobile
+  @media (max-width: 768px) {
+    height: 300px;
+  }
 `
 
 export default PostHead
